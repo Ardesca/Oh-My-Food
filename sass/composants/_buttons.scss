@@ -1,0 +1,14 @@
+@mixin CTA{
+    padding: 15px 30px 15px 30px;
+    border-radius: 30px;
+    font-size:16px;
+    background: linear-gradient(355deg, $primary_color, $secondary_color);   
+    color: white;
+    transition: all 800ms ease-in-out;
+    &:hover{
+        cursor: pointer;        
+        box-shadow: 0 0 20px #777777; 
+        background:linear-gradient(355deg, darken($primary_color, 20%), darken($secondary_color, 50%)); 
+    }
+   
+}

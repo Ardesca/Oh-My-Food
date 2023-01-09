@@ -1,0 +1,36 @@
+@mixin respond($breakpoint) {
+    @if($breakpoint == moyen)  {
+      @media (max-width: 900px) { @content }
+    }
+    @if($breakpoint == petit)  {
+      @media (max-width: 768px) { @content }
+    }
+  };
+
+@mixin gradient($direction, $list){
+  background: -webkit-linear-gradient($direction, $list);
+  background: -moz-linear-gradient($direction, $list);
+  background: -o-linear-gradient($direction, $list);
+  background: linear-gradient($direction, $list);  
+}
+
+
+
+@mixin flex_center{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin title{
+  display: flex;
+  align-items: center;
+  height: 10%;
+  align-self: flex-start;
+  width: 90%;
+  margin-left:5% ;
+  margin-top: 3%;
+  font-size: 2em
+}
+
+
